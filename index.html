@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            //fade
+            $(".btn1").click(function () {
+                $(".p1").fadeOut();
+            });
+            $(".btn2").click(function () {
+                $(".p1").fadeIn();
+            });
+            //slide
+            $(".btn3").click(function () {
+                $(".p2").slideUp();
+            });
+            $(".btn4").click(function () {
+                $(".p2").slideDown();
+            });
+
+
+            // function and event
+            $("#knop").dblclick(function(){
+                var leeftijd = $("#Tekstveld").val();
+                window.alert("Uw leeftijd is: " + leeftijd);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div>
+        <p class="p1">This is a paragraph.</p>
+
+        <button class="btn1">Fade out</button>
+        <button class="btn2">Fade in</button>
+    </div>
+    <hr>
+    <div>
+        <p class="p2">This is a paragraph.</p>
+        <button class="btn3">Slide up</button>
+        <button class="btn4">Slide down</button>
+    </div>
+    <hr>
+    <form>
+        Wat is uw leeftijd?
+        <input type="text" id="Tekstveld">
+        <input id="knop" name="knop" type="button" value="leeftijd registreren">
+    </form>
+    <noscript>
+        Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+    </noscript>
+</body>
+
+</html>
